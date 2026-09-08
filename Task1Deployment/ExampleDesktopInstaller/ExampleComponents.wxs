@@ -1,0 +1,7 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
+			<Files Include="$(var.ExampleDesktop.TargetDir)**" />
+		</ComponentGroup>
+	</Fragment>
+</Wix>

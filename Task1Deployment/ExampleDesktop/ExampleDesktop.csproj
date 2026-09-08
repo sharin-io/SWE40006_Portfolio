@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  
+	<RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+	<Platforms>AnyCPU;x64</Platforms>
+	<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExpenseTrackerLogic\ExpenseTrackerLogic.csproj" />
+  </ItemGroup>
+
+</Project>
