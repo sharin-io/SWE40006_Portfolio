@@ -1,0 +1,70 @@
+@page
+@namespace SWE40006_Task3_Web.Pages
+@model IndexModel
+@{
+    ViewData["Title"] = "Task 3.2 - System Environment Assessment";
+}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+
+            <!-- Course Header Section -->
+            <div class="border-bottom pb-3 mb-4">
+                <h1 class="h3 font-weight-bold text-dark mb-1">SWE40006: Software Deployment and Evolution</h1>
+                <p class="text-muted mb-0">Portfolio Deployment Artifact &mdash; Task 3.2 (Credit Level)</p>
+            </div>
+
+            <!-- Student Metadata Section -->
+            <div class="row mb-5 text-dark">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <span class="d-block text-muted small text-uppercase tracking-wider">Student Candidate</span>
+                    <span class="font-weight-bold">@Model.StudentName</span>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <span class="d-block text-muted small text-uppercase tracking-wider">Student ID</span>
+                    <span class="font-monospace font-weight-bold">@Model.StudentID</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="d-block text-muted small text-uppercase tracking-wider">Course</span>
+                    <span class="small">@Model.UnitCode</span>
+                </div>
+            </div>
+
+            <!-- Cloud Target Telemetry Matrix Table -->
+            <div class="mb-4">
+                <h2 class="h5 text-secondary font-weight-normal mb-3">Target Cloud Infrastructure Telemetry</h2>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover align-middle bg-white">
+                        <thead class="thead-light table-light">
+                            <tr class="text-muted small text-uppercase tracking-wide">
+                                <th scope="col" class="w-50 py-3 ps-3">Metric Configuration Attribute</th>
+                                <th scope="col" class="w-50 py-3 ps-3">Runtime Environment Output Payload</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-monospace text-dark">
+                            <tr>
+                                <td class="py-3 ps-3 text-secondary">Deployment Evaluation Scope</td>
+                                <td class="py-3 ps-3 font-weight-bold">@Model.AppStatus</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 ps-3 text-secondary">Dynamic Server Epoch (UTC)</td>
+                                <td class="py-3 ps-3 text-dark">@Model.ServerTimeUtc</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 ps-3 text-secondary">Host Operating System Subsystem</td>
+                                <td class="py-3 ps-3 text-muted">@Model.TargetOS</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 ps-3 text-secondary">Framework Engine SDK Version</td>
+                                <td class="py-3 ps-3 text-muted">@Model.DotNetVersion</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

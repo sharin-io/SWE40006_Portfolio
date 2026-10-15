@@ -1,0 +1,16 @@
+# Build artifacts
+bin/
+obj/
+publish/
+publish_*/
+*.zip
+
+# IDE files
+.vs/
+.vscode/
+*.suo
+*.user
+
+# OS files
+.DS_Store
+Thumbs.db
